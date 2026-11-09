@@ -1,38 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name: Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicholas Broniec | Portfolio</title>
+  <meta name="description" content="Portfolio of Nick: game modding, web development, and security.">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <header>
-    <!-- Header and navigation: your name or logo, and links to your main sections. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <section id="introduction">
-      <!-- Introduction: your name, a one-line headline, a short welcome, and a link to your work. -->
+
+  <main id="main">
+    <section class="intro">
+      <h1 id="top-heading">Hey, I'm Nick! I mod games and make web pages.</h1>
+      <p>Welcome to my page! I've worked on multiple different projects, including a popular mod for the hit video game Terraria as well as different custom web pages.</p>
+      <a class="button" href="#projects">See my projects</a>
     </section>
-    <section id="about">
-      <!-- About: your interests, studies, and goals. No home address, phone number, or student ID. -->
-    </section>
+
     <section id="projects">
-      <!-- Projects: at least two work samples, each with a card and a short case study. -->
+      <h2 id="projects-heading">Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/mod.png" width="640" height="360">
+          <h3>Nucc's Copious Cosmetic Collection</h3>
+          <p>Over the past 4 years, I've created and maintained this popular cosmetic mod for Terraria. It includes multiple different outfits, pets and mounts that players are able to use that come from all sorts of different franchises and media.</p>
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2871105137">Check out the mod on the Steam workshop!</a>
+        </article>
+
+        <article class="card">
+          <img src="images/assignment2.png" width="640" height="360">
+          <h3>CS300 Course: Assignment 2</h3>
+          <p>An assignment for my CS300 course where I had to create a web page with navigation links for River Workshop.</p>
+          <a href="https://example.com/your-live-page">View the live site for it here!</a>
+        </article>
+      </div>
+
+      <h3 class="cs-heading">Case Studies</h3>
+
+      <details class="case-study">
+        <summary>Case study: Nucc's Copious Cosmetic Collection</summary>
+        <dl>
+          <dt>What was it?</dt>
+          <dd>It is a modification to the 2D indie game Terraria. It adds new content created solely by me.</dd>
+          <dt>Who was it for?</dt>
+          <dd>It was made both for my own interests and for other players. I did it to see what I could create on my own.</dd>
+          <dt>How did you make it?</dt>
+          <dd>It started from learning about C#. It was a combination of learning the intricacies of tModLoader, the tool needed to create and run mods for Terraria. Then I had to start working on my pixel art skills to create all the art assets for every outfit and item. After publishing, I would then also take suggestions from people who left comments or ideas for what I should add next.</dd>
+          <dt>One decision, and why</dt>
+          <dd>One decision I made was how players could acquire the items in the game. I made two different options that are still there to this day. I created an NPC that sells the items, but I made a toggle in the settings that lets you either obtain them through normal gameplay or lets you get them all for free without having to work for it. I felt this struck a good balance because some players don't want to necessarily work for it while others do want to.</dd>
+          <dt>What did you check?</dt>
+          <dd>I have to test literally everything and make sure it compiles correctly in the first place. Every tiny little change I make, I HAVE to recompile it just to check if my new item or asset works properly. I check the code, sprites, animations, and overall feel of everything with each update.</dd>
+          <dt>What would you improve?</dt>
+          <dd>Currently, I plan on making more updates. I plan to resprite, basically redraw, a lot of the current items as well as update the mod's main icon image.</dd>
+        </dl>
+      </details>
+
+      <details class="case-study">
+        <summary>Case study: Assignment 2 Page</summary>
+        <dl>
+          <dt>What was it?</dt>
+          <dd>It was an assignment made to develop a web page with a prompt. It was an exercise in the design of a proper webpage as well as having useful links for navigation.</dd>
+          <dt>Who was it for?</dt>
+          <dd>It was mainly for my professor and my course, but in a way it was for myself so I could learn.</dd>
+          <dt>How did you make it?</dt>
+          <dd>I had to make a plan early on to decide what would go where. Then I had to add the proper requirements. I needed to space all information evenly and correctly. The nav links also had to work accordingly.</dd>
+          <dt>One decision, and why</dt>
+          <dd>I used a gap so that the cards would have proper spacing in between in each other. Not too cramped, not too far apart</dd>
+          <dt>What did you check?</dt>
+          <dd>I had to check the view on different sizes of screens, tabbing through the web page, and the navigation links to see if they took the user where they should.</dd>
+          <dt>What would you improve?</dt>
+          <dd>I would probably change the position of the book image to be more centered honestly.</dd>
+        </dl>
+      </details>
     </section>
+
     <section id="skills">
-      <!-- Skills: the skills your work samples show, each connected to a sample. -->
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills">
+        <li><strong>C# coding, modding experience, and pixel artistry:</strong> see <a href="#mod">my mod</a>.</li>
+        <li><strong>Responsive layout with working navigation links:</strong> see <a href="#a2">my Assignment 2 page</a>.</li>
+      </ul>
     </section>
-    <section id="contact">
-      <!-- Contact: a professional way to reach you, such as a profile link. -->
+
+    <section id="about">
+      <h2 id="about-heading">About</h2>
+      <p>I'm a college student at Northeastern Illinois University. Currently, I am studying computer science with a concentration in cybersecurity. I have a passion for gaming, and I love to create new things.</p>
     </section>
+
     <section id="resume">
-      <!-- Resume: a resume section or a link to a downloadable resume PDF. -->
+      <h2 id="resume-heading">Resume</h2>
+      <p><a href="resume.pdf">Download my resume (PDF)</a></p>
+    </section>
+
+    <section id="contact">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Find me on <a href="https://github.com/ngbroniec">GitHub</a></p>
     </section>
   </main>
-  <footer>
-    <!-- Footer: your name, the year, and your profile links. -->
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Nick</p>
+    <p><a href="https://github.com/ngbroniec">GitHub</a></p>
   </footer>
-  <script src="app.js"></script>
 </body>
 </html>

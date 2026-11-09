@@ -1,7 +1,7 @@
 :root {
-  --back: #fff7ff;
+  --back: #efe3f5;
   --text: #1d1d1b;
-  --accent: #ac7ec2;
+  --accent: #7a3f96;
   --dark: #3d143a;
   --gap: 1.25rem;
 }
@@ -78,7 +78,7 @@ h2 { font-size: 1.6rem; border-bottom: 3px solid var(--accent); padding-bottom: 
 .cards { display: grid; gap: var(--gap); }
 .card {
   background: #fff;
-  border: 1px solid #d8d8d0;
+  border: 2px solid #c9a9d8;
   border-radius: 10px;
   padding: var(--gap);
 }
@@ -87,7 +87,7 @@ h2 { font-size: 1.6rem; border-bottom: 3px solid var(--accent); padding-bottom: 
 
 .case-study {
   background: #fff;
-  border: 1px solid #d8d8d0;
+  border: 2px solid #c9a9d8;
   border-radius: 10px;
   padding: 0.75rem var(--gap);
   margin-bottom: 1rem;
